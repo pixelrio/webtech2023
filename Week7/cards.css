@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.parent {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+}
+
+.visual {
+  height: 100px;
+  width: 100%;
+  background: wheat;
+  margin: 0.5rem 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: lightpink;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+p {
+  font-size: 1rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

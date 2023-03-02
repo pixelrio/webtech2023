@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body{
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif
+}
+.flexbox{
+  display: flex;
+}
+.grid{
+  display: grid;
+}
+
+
+header{
+  width: 100%;
+}
+.navbar{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+.navbar__toggle {
+  justify-self: end;
+  margin-right: 25px;
+  display: none;
+}
+.navbar img{
+  list-style: none;
+  justify-self: start;
+  margin-left: 20px;
+  width: auto;
+}
+.navbar ul{
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+}
+.navbar ul li{
+  list-style: none;
+  padding: 0 10px;
+}
+.navbar__expanded{
+  display: block !important;
+  width: 100%;
+  background: navy;
+}
+.navbar__expanded li{
+  display: block;
+  width: 100%;
+}
+.navbar__expanded li a{
+  color: white;
+}
+main{
+
+}
+main img{
+  width: 100%;
+}
+
+
+@media screen and (max-width: 768px){ 
+  .navbar {
+    grid-template-columns: 1fr 1fr;
+  }
+  .navbar__toggle{
+    display: block;
+  }
+  .navbar ul{
+    display: none;
+  }
+  .navbar ul li{
+    display: block;
+  }
+}
+

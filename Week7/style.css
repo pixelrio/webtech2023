@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.parent1{
+  display: grid;
+  place-items: center;
+  background: lightblue;
+  width: 100%;
+  height: 300px;
+  resize: both;
+  overflow: auto;
+}
+.child1{
+  padding: 1.5rem;
+  border-radius: 10px;
+  background: lightcoral;
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+.parent2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.parent2 .box{
+  /* Flex: Flex Grow | Flex Shrink | Base Width */
+  flex: 1 1 300px; /*  Stretching: */
+  flex: 0 1 300px; /* No stretching: */
+  padding: 5rem;
+  margin: 5px;
+  font-size: 2rem;
+  text-align: center;
+  background: lightcoral;
+}
+
+
+.parent3{
+  display: grid;
+  grid-template-columns: minmax(300px, 30%) 1fr;
+}
+
+.parent3 aside{
+  background: lightpink;
+  padding: 5rem;
+}
+.parent3 main{
+  padding: 5rem;
+  background: lightgoldenrodyellow;
+}
+
+
+.parent4{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.parent4 .span12{
+  background-color: aquamarine;
+  padding: 2rem 5rem;
+  grid-column: 1 / span 12;
+}
+.parent4 .span7{
+  background-color: aqua;
+  padding: 2rem 5rem;
+  grid-column: 4 / span 7;
+}
+.parent4 .span3{
+  background-color: blanchedalmond;
+  padding: 2rem 5rem;
+  grid-column: 6 / span 3;
+}

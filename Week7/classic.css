@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.parent{
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+  height: 100vh;
+}
+.parent header{
+  background: lightblue;
+  padding: 2rem 5rem;
+  grid-column: 1/4;
+}
+.parent .left,
+.parent .right{
+  padding: 2rem 2rem;
+  grid-column: 1/2;
+  background: lightsalmon;
+}
+.parent .right{
+  padding: 2rem 2rem;
+  grid-column: 3/4;
+  background: lightsalmon;
+}
+.parent main{
+  background: lightcoral;
+  padding: 2rem 5rem;
+  grid-column: 2/3;
+}
+
+.parent footer{
+  background: lightblue;
+  padding: 2rem 5rem;
+  grid-column: 1/4;
+}
+
